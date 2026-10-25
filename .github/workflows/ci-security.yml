@@ -23,7 +23,7 @@ jobs:
         with:
           base: ${{ github.event.pull_request.base.sha }}
           head: ${{ github.event.pull_request.head.sha }}
-          extra_args: --exclude-paths=.trufflehog-exclude --no-update
+          extra_args: --exclude-paths=.trufflehog-exclude
 
       # 3. Configurar Node.js para validar el Frontend
       - name: ⚙️ Setup Node.js Environment
