@@ -3,8 +3,8 @@ import { Suspense } from "react";
 import "./globals.css"; // Ajusta la ruta según tu estructura
 
 export const metadata = {
-  title: "Mijail Catálogo - Tecnología & Seguridad",
-  description: "Catálogo exclusivo de laptops, equipos de cómputo y cámaras de seguridad.",
+  title: "Mi Catálogo - Tecnología & Seguridad",
+  description: "Catálogo de productos.",
 };
 
 export default function RootLayout({

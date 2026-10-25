@@ -48,6 +48,8 @@ function CatalogoContenido() {
     return cumpleCategoria && cumpleBusqueda;
   });
 
+  const variableTest = "esta es una variable para probar CI/CD";
+
   return (
     <>
       {/* INDICADOR DE BÚSQUEDA ACTIVA */}
