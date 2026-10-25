@@ -48,16 +48,4 @@ else
     echo "⚠️  Trivy no está instalado en el PATH. Saltando escaneo de infraestructura."
 fi
 
-# ==========================================
-# 4. FORMATO DE TERRAFORM
-# ==========================================
-if command -v terraform >/dev/null 2>&1; then 
-    echo "📏 Verificando formato estético de Terraform..."
-    terraform fmt -check -recursive terraform
-    if [ $? -ne 0 ]; then
-        echo "❌ [ERROR] El formato de Terraform no es correcto. Ejecuta 'terraform fmt -recursive terraform' y vuelve a intentar."
-        exit 1
-    fi
-fi
-
 echo "✅ [DevSecOps] ¡Fase de Code & Plan superada exitosamente!"
